@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technology News</title>
+</head>
+<body>
+    <select>
+        <option value="technology">Tech</option>
+    </select>
+    <h1>Technology News</h1>
+    <ul>
+        {% for title, link in articles %}
+            <li><a href="https://nytimes.com{{ link }}" target="_blank">{{ title }}</a></li>
+        {% endfor %}
+        <br>
+        {{news}}
+    </ul>
+</body>
+</html>
